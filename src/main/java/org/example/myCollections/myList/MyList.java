@@ -22,5 +22,4 @@ public interface MyList<E> {
     E set(int index, E element);
     MyList<E> subList(int fromIndex, int toIndex);
     Iterator<E> iterator();
-
 }

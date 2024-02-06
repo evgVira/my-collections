@@ -24,7 +24,7 @@ public class MyArrayList<T> implements MyList<T>{
     }
 
 
-    // Inner methods for ArrayList
+    // Внутренние методы для ArrayList
     private void ensureCapacity(int minCapacity){
         if(minCapacity - array.length > 0){
             grow(minCapacity);
@@ -59,19 +59,20 @@ public class MyArrayList<T> implements MyList<T>{
         }
         return values;
     }
-    //
 
 
+    //получить размер ArrayList
     @Override
     public int size(){
         return size;
     }
 
+    // проверить наполненность
     @Override
     public boolean isEmpty(){
         return size == 0;
     }
-
+    // проверить
     @Override
     public boolean contains(Object element){
         for(Object value : array){
@@ -255,7 +256,4 @@ public class MyArrayList<T> implements MyList<T>{
             }
         };
     }
-
-
-
 }
